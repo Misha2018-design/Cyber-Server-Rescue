@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#07111f">
+    <title>Cyber Server Rescue</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="game-header">
+        <p class="eyebrow">CYBER SERVER RESCUE</p>
+        <h1>Захисти сервер</h1>
+        <p class="instructions">Рухайся клавішами ← → або A / D та уникай вірусів.</p>
+      </header>
+
+      <section class="game-panel" aria-label="Ігрове поле">
+        <canvas id="game-canvas" width="480" height="640" aria-label="Гра: уникай вірусів">
+          Ваш браузер не підтримує Canvas.
+        </canvas>
+        <div id="game-over" class="game-over" role="status" aria-live="polite" hidden>
+          <p class="eyebrow">З'ЄДНАННЯ ВТРАЧЕНО</p>
+          <h2>Сервер заражено</h2>
+          <p>Натисни Enter або кнопку нижче, щоб спробувати ще раз.</p>
+          <button id="restart-button" type="button">Грати знову</button>
+        </div>
+      </section>
+      <p class="game-hint">Швидкість вірусів поступово зростає. Не дай їм торкнутися тебе!</p>
+    </main>
+  </body>
+</html>
